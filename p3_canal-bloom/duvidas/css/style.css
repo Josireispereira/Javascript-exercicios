@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'MarkPro';
+    src: url('../Fontes/MarkPro/MarkPro.eot') format('embedded-opentype'),
+        url('../Fontes/MarkPro/MarkPro.woff') format('woff'),
+        url('../Fontes/MarkPro/MarkPro.ttf') format('truetype'),
+        url('../Fontes/MarkPro/MarkPro.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MarkOT-Bold';
+    src: url('../Fontes/MarkOT-Bold/MarkOT-Bold.eot') format('embedded-opentype'),
+        url('../Fontes/MarkOT-Bold/MarkOT-Bold.woff') format('woff'),
+        url('../Fontes/MarkOT-Bold/MarkOT-Bold.ttf') format('truetype'),
+        url('../Fontes/MarkOT-Bold/MarkOT-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+}
+
+.container {
+    width: 100%;
+}
+
+.container__bg-purple {
+    background-color: #d7cbf7;
+    padding: 7vh;
+}
+
+.container__title-purple {
+    font-family: 'MarkOT-Bold';
+    font-weight: bold;
+    color: #793df5;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.section__questions {
+    font-family: 'MarkPro';
+    width: 55%;
+    margin: 0 auto;
+}
+
+.section__div-questions {
+    margin: 10vh 0;
+}
+
+.section__doubts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-gray, .text-gray, .text-gray-bold {
+    color: #6c6c70;
+}
+
+.title-gray {
+    font-family: 'MarkOT-Bold';
+    font-size: 2rem;
+    padding: 2.5vh 0;
+    cursor: pointer;
+}
+
+.text-gray {
+    display: none;
+    font-size: 1.375rem;
+    padding: 2.5vh 0;
+}
+
+a {
+    text-decoration: none;
+    color: #793df5;
+}
+
+.line-gray {
+    border-bottom: 1px solid #9f9fa1;
+    ;
+    padding-bottom: 2.5vh;
+}
+
+.btn {
+    display: none;
+    color: #793df5;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-left: 2.5vh;
+    cursor: pointer;
+}
+
+.active {
+    display: block;
+}
+
+.talk-to-us {
+    font-size: 1.375rem;
+    margin-top: 5vh;
+}
+
+.text-gray-bold {
+    font-family: 'MarkOT-Bold';
+}
+
+.email {
+    font-size: 1.375rem;
+    color: #793df5;
+}
+
+@media (min-width: 420px) {
+    .section__questions {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .section__questions {
+        width: 70%;
+    }
+
+    .container__title-purple {
+        font-size: 60px;
+    }
+
+    .btn {
+        font-size: 60px;
+    }
+
+    .title-gray {
+        font-size: 65px;
+    }
+    
+    .text-gray {
+        font-size: 35px;
+    }
+}
